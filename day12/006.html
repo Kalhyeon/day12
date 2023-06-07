@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* display 속성은 자식에게만 적용, color 속성은 자손에게 적용 */
+    body {
+      display: flex;
+      justify-content: center; /* div tag 가 없으면 h1~h6 tag 가 모두 body 요소의 자식이므로 div tag 로 묶는다. */
+    }
+    h1, h2, h3, h4, h5, h6 { /* h1~h6 모두 적용 */
+      font-size: 1em; /* 폰트 사이즈를 100% 로 지정 */
+      margin: 0; /* 상 우 하 좌 (시계 방향) 모두 margin 이 0 (값이 0일 땐 단위를 생략할 수 있다) */
+      margin: 0 10px; /* 상-하 margin 이 는 0, 좌-우 는 margin 이 10px*/
+      margin-top: 0; /* 상 만 margin 이 0 */
+      margin-bottom: 0; /* 하 만 margin 이 0 */
+      margin-left: 0; /* 좌 만 margin 이 0 */
+      margin-right: 0; /* 우 만 margin 이 0 */
+      font-weight: normal; /* 기본값, 폰트 두께 400 (bold 는 700) */
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <h1>우리나라 좋은 나라</h1>
+    <h2>우리나라 좋은 나라</h2>
+    <h3>우리나라 좋은 나라</h3>
+    <h4>우리나라 좋은 나라</h4>
+    <h5>우리나라 좋은 나라</h5>
+    <h6>우리나라 좋은 나라</h6>
+ </div>
+</body>
+</html>

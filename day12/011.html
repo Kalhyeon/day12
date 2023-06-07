@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color</title>
+  <style>
+    div {
+      width: 200px;
+      height: 100px;
+      color: white;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .mediumseagreen {
+      background-color: mediumseagreen;
+    }
+    .red1 {
+      background-color: rgb(255, 0, 0);
+    }
+    .red2 {
+      background-color: rgba(255, 0, 0, 0.5); /* rgba 의 alpha 값은 투명도를 조절한다. */
+    }
+    .red3 {
+      /* 16진수로 지정 : 0~255 => 0~ff */
+      background-color: #ff0000; /* f = 15, 15^2 = 225 */
+    }
+  </style>
+</head>
+<body>
+  <div class="mediumseagreen">A</div>
+  <div class="red1">B</div>
+  <div class="red2">C</div>
+  <div class="red3">D</div>
+</body>
+</html>
